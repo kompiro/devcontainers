@@ -1,7 +1,7 @@
 // For format details, see https://containers.dev
 {
     "name": "kompiro devcontainer base",
-    "image": "buildpack-deps:noble-curl",
+    "image": "buildpack-deps:jammy-curl",
     "onCreateCommand": "bash .devcontainer/setup.sh",
     "features": {
         "ghcr.io/devcontainers/features/common-utils:2": {
