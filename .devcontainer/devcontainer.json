@@ -1,8 +1,9 @@
 // For format details, see https://containers.dev
 {
     "name": "kompiro devcontainer base",
-    "image": "buildpack-deps:jammy-curl",
-    "onCreateCommand": "bash .devcontainer/setup.sh",
+    "build":{
+        "dockerfile": "Dockerfile"
+    },
     "features": {
         "ghcr.io/devcontainers/features/common-utils:2": {
             "installZsh": "true",
