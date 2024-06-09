@@ -27,7 +27,7 @@ jobs:
           password: ${{ secrets.REGISTRY_TOKEN }}
     - 
         name: Pre-build dev container image
-        uses: devcontainers/ci@v0.2
+        uses: devcontainers/ci@v0.3
         with:
           imageName: ghcr.io/${{ github.repository }}
           cacheFrom: ghcr.io/${{ github.repository }}
