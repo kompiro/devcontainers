@@ -21,6 +21,5 @@
           "packages": "yadm"
       }    
     },
-    "containerUser": "vscode",
-    "remoteUser": "ubuntu"
+    "remoteUser": "vscode"
 }
