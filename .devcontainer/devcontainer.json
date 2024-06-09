@@ -16,7 +16,7 @@
             "version": "latest",
             "ppa": "false"
         },
-        "ghcr.io/devcontainers/features/docker-in-docker:2.11.0": {},
+        // "ghcr.io/devcontainers/features/docker-in-docker:2.11.0": {},
         "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
           "packages": "yadm"
       }    
