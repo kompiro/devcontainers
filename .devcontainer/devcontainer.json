@@ -1,0 +1,25 @@
+// For format details, see https://containers.dev
+{
+    "name": "kompiro devcontainer base",
+    "image": "buildpack-deps:noble-curl",
+    "onCreateCommand": "bash .devcontainer/setup.sh",
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "installZsh": "true",
+            "username": "vscode",
+            "upgradePackages": "true",
+            "installOhMyZsh": "false",
+            "installOhMyZshConfig": "false"
+        },
+        "ghcr.io/devcontainers/features/git:1": {
+            "version": "latest",
+            "ppa": "false"
+        },
+        "ghcr.io/devcontainers/features/docker-in-docker:2.11.0": {},
+        "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
+          "packages": "yadm"
+      }    
+    },
+    "containerUser": "vscode",
+    "remoteUser": "ubuntu"
+}
