@@ -4,6 +4,7 @@
     "build":{
         "dockerfile": "Dockerfile"
     },
+    "onCreateCommand": "bash .devcontainer/setup.sh",
     "features": {
         "ghcr.io/devcontainers/features/common-utils:2": {
             "installZsh": "true",
