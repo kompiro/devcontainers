@@ -4,4 +4,6 @@ set -ex
 
 URL=${URL:-"https://github.com/kompiro/yadm"}
 
+su - "$_REMOTE_USER" <<EOF
 yadm clone $URL --bootstrap
+EOF
