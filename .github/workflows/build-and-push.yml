@@ -26,10 +26,19 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.REGISTRY_TOKEN }}
     - 
-        name: Pre-build dev container image
+        name: Pre-build base container image
         uses: devcontainers/ci@v0.3
         with:
           subFolder: base
           imageName: ghcr.io/${{ github.repository }}/base
           cacheFrom: ghcr.io/${{ github.repository }}/base
           push: always
+    - 
+        name: Pre-build dev container image
+        uses: devcontainers/ci@v0.3
+        with:
+          subFolder: dev
+          imageName: ghcr.io/${{ github.repository }}/dev
+          cacheFrom: ghcr.io/${{ github.repository }}/dev
+          push: always
+
