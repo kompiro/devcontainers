@@ -16,6 +16,9 @@ on:
 jobs:
   build-and-push:
     runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+      packages: write
     steps:
       - name: Checkout
         id: checkout
@@ -25,7 +28,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.REGISTRY_TOKEN }}
+          password: ${{ github.token }}
       - name: Pre-build base container image
         uses: devcontainers/ci@v0.3
         with:
