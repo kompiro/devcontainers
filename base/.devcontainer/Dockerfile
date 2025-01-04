@@ -1,4 +1,4 @@
-FROM buildpack-deps:jammy-curl
+FROM buildpack-deps:24.04-curl
 
 LABEL org.opencontainers.image.source=https://github.com/kompiro/devcontainers
 LABEL org.opencontainers.image.description="kompiro development base environment"
